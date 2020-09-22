@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
+  margin-bottom: 5px;
 }
 
 .screen-header__title {
@@ -11,6 +12,22 @@
   font-weight: 600;
 }
 
+.screen-header__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
 .screen-header__icons span {
   margin: 0px 10px;
+}
+
+.screen-header__reddot {
+  background-color: tomato;
+  display: flex;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  justify-content: right;
+  left: 20px;
 }
