@@ -21,13 +21,15 @@
   margin: 0px 10px;
 }
 
-.screen-header__reddot {
-  background-color: tomato;
-  display: flex;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  position: absolute;
-  justify-content: right;
-  left: 20px;
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
 }
